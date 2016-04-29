@@ -940,6 +940,8 @@ _getopt_internal (int argc, char *const *argv, const char *optstring,
 	    nextchar = NULL;
 	  }
       }
+      if(c == 'l' || c == 'O')
+	c = '?';
     return c;
   }
 }

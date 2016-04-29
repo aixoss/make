@@ -49,7 +49,7 @@ $tests_passed = 0;
 $test_passed = 1;
 
 # Timeout in seconds.  If the test takes longer than this we'll fail it.
-$test_timeout = 5;
+$test_timeout = 35;
 $test_timeout = 10 if $^O eq 'VMS';
 
 # Path to Perl

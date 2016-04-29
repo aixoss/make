@@ -343,7 +343,8 @@ static const char *const usage[] =
   -k, --keep-going            Keep going when some targets can't be made.\n"),
     N_("\
   -l [N], --load-average[=N], --max-load[=N]\n\
-                              Don't start multiple jobs unless load is below N.\n"),
+                              Don't start multiple jobs unless load is below N.\n\
+			      Feature not supported on AIX.\n"),
     N_("\
   -L, --check-symlink-times   Use the latest mtime between symlinks and target.\n"),
     N_("\
@@ -354,7 +355,8 @@ static const char *const usage[] =
                               Consider FILE to be very old and don't remake it.\n"),
     N_("\
   -O[TYPE], --output-sync[=TYPE]\n\
-                              Synchronize output of parallel jobs by TYPE.\n"),
+                              Synchronize output of parallel jobs by TYPE.\n\
+			      Feature not supported on AIX.\n"),
     N_("\
   -p, --print-data-base       Print make's internal database.\n"),
     N_("\

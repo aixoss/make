@@ -2152,6 +2152,12 @@ func_realpath (char *o, char **argv, const char *funcname UNUSED)
               EINTRLOOP (r, stat (out, &st));
               if (r == 0)
                 {
+		int length = strlen(out);
+		if(length > 1 && out[length-1] == '/')
+		{
+			length--;
+			out[length] = '\0';
+		}
                   o = variable_buffer_output (o, out, strlen (out));
                   o = variable_buffer_output (o, " ", 1);
                   doneany = 1;

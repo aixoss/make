@@ -1,0 +1,23 @@
+Instructions to build & install GNU make 4.1 in AIX
+---------------------------------------------------
+
+1)Clone the source code 
+
+2)set the compiler (xlc is the preferred over gcc)
+    export CC=xlc
+
+3)./configure --prefix=/opt/freeware --infodir=/opt/freeware/info --mandir=/opt/freeware/man
+
+4)make 
+
+5)make install DESTDIR=/opt/freeware
+
+
+Instructions to build GNU make 4.1 rpm package on AIX
+-----------------------------------------------------
+
+1)Go to https://github.com/aixoss/make/releases/tag/4.1
+
+2)Get the patches(if any), spec file & source tarball (tar.gz)
+
+3)Do a "rpm -ba <spec file>
